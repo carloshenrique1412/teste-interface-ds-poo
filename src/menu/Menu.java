@@ -26,8 +26,8 @@ public class Menu {
 
         JOptionPane.showMessageDialog(null,
                 "Valor informado: " + valor +
-                "\nISS (5%): " + iss.calcularValorTotal(valor) +
-                "\nICMS (18%): " + icms.calcularValorTotal(valor) +
-                "\nIPI (10%): " + ipi.calcularValorTotal(valor));
+                "\nISS (5%):         " + "%.2f".formatted(iss.calcularValorTotal(valor)) +
+                "\nICMS (18%):   " + "%.2f".formatted(icms.calcularValorTotal(valor)) +
+                "\nIPI (10%):        " + "%.2f".formatted(ipi.calcularValorTotal(valor)));
     }
 }
